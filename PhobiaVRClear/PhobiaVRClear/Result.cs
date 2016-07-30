@@ -40,7 +40,7 @@ namespace PhobiaVRClear
             layoutcolor.SetBackgroundColor(Android.Graphics.Color.Rgb(red-30, green-30, blue-30));
 
             var homebutton = FindViewById<ImageView>(Resource.Id.imageHome);
-            homebutton.SetBackgroundColor(Android.Graphics.Color.Rgb(red-30, green-30, blue));
+            homebutton.SetBackgroundColor(Android.Graphics.Color.Rgb(red-30, green-30, blue-30));
             homebutton.Click += Homebutton_Click;
 
             var scrollcolor = FindViewById<ScrollView>(Resource.Id.scrollViewResult);

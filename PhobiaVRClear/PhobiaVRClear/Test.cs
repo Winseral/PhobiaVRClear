@@ -56,7 +56,16 @@ namespace PhobiaVRClear
             //This span for Result button
             TableRow.LayoutParams par2 = new TableRow.LayoutParams();
             par2.Span = 3;
-   
+
+            //home button
+            var homebutton = FindViewById<ImageView>(Resource.Id.imageHometest);
+            homebutton.SetBackgroundColor(Android.Graphics.Color.Rgb(red - 30, green - 30, blue - 30));
+            homebutton.Click += Homebutton_Click;
+
+            //set the Questiontable to the Home button color
+            var testlinearlayout = FindViewById<LinearLayout>(Resource.Id.testlinearlayout);
+            testlinearlayout.SetBackgroundColor(Android.Graphics.Color.Rgb(red - 30, green - 30, blue - 30));
+
 
             //Sets the Phobiatype from intent sets to QuestionTable TestMain.axml
             var Qtable = FindViewById<TableLayout>(Resource.Id.QuestionTable);
@@ -64,14 +73,15 @@ namespace PhobiaVRClear
             var QuestionRow = new TableRow(this);
 
             Qtable.AddView(QuestionRow);
-            Qtable.SetBackgroundColor(Android.Graphics.Color.Rgb(red, green, blue));
+            Qtable.SetColumnStretchable(0, true);
+            Qtable.SetBackgroundColor(Android.Graphics.Color.Rgb(red-30, green-30, blue-30));
   
 
             var textView = new TextView(this);
             textView.Text = Intent.GetStringExtra("PhobiaType");
-            textView.SetTextSize(Android.Util.ComplexUnitType.Dip, 48);
-            textView.Gravity = GravityFlags.Left;
-            textView.SetBackgroundColor(Android.Graphics.Color.Rgb(red,green,blue));
+            textView.SetTextSize(Android.Util.ComplexUnitType.Dip, 36);
+            textView.Gravity = GravityFlags.Center;
+            textView.SetBackgroundColor(Android.Graphics.Color.Rgb(red-30,green-30,blue-30));
             QuestionRow.AddView(textView);
 
 
@@ -239,6 +249,12 @@ namespace PhobiaVRClear
             QuestionRow7.AddView(Referencetext,par2);
             
         } //End of OnCreate
+
+        private void Homebutton_Click(object sender, EventArgs e)
+        {
+            Intent home = new Intent(this, typeof(MainActivity));
+            this.StartActivity(home);
+        }
 
         //Save the RatingBar Answers in this Override
         protected override void OnSaveInstanceState(Bundle outState)

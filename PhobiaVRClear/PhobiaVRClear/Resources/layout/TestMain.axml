@@ -3,12 +3,26 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TableLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/QuestionTable" />
+        android:id="@+id/testlinearlayout">
+        <ImageView
+            android:src="@drawable/ic_home_white_48dp"
+            android:id="@+id/imageHometest"
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="2dip" />
+        <TableLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/QuestionTable" />
+    </LinearLayout>
     <ScrollView
         android:minWidth="25px"
         android:minHeight="25px"

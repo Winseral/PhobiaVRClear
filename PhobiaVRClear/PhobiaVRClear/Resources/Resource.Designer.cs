@@ -1265,20 +1265,23 @@ namespace PhobiaVRClear
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050014
-			public const int AnswerTable = 2131034132;
+			// aapt resource value: 0x7f050016
+			public const int AnswerTable = 2131034134;
 			
 			// aapt resource value: 0x7f050001
 			public const int PhobiaTableLayout = 2131034113;
 			
-			// aapt resource value: 0x7f050012
-			public const int QuestionTable = 2131034130;
+			// aapt resource value: 0x7f050014
+			public const int QuestionTable = 2131034132;
 			
 			// aapt resource value: 0x7f050002
 			public const int ResultLayout = 2131034114;
 			
 			// aapt resource value: 0x7f050003
 			public const int imageHome = 2131034115;
+			
+			// aapt resource value: 0x7f050013
+			public const int imageHometest = 2131034131;
 			
 			// aapt resource value: 0x7f050005
 			public const int linearLayoutResult = 2131034117;
@@ -1289,8 +1292,8 @@ namespace PhobiaVRClear
 			// aapt resource value: 0x7f050000
 			public const int scrollView1 = 2131034112;
 			
-			// aapt resource value: 0x7f050013
-			public const int scrollView2 = 2131034131;
+			// aapt resource value: 0x7f050015
+			public const int scrollView2 = 2131034133;
 			
 			// aapt resource value: 0x7f050004
 			public const int scrollViewResult = 2131034116;
@@ -1303,6 +1306,9 @@ namespace PhobiaVRClear
 			
 			// aapt resource value: 0x7f05000c
 			public const int space5 = 2131034124;
+			
+			// aapt resource value: 0x7f050012
+			public const int testlinearlayout = 2131034130;
 			
 			// aapt resource value: 0x7f050010
 			public const int textDateTime = 2131034128;
