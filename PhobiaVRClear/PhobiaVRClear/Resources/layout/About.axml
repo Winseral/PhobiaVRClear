@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:showDividers="none"
+    android:id="@+id/ResultLayout">
+    <LinearLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearResultHome">
+        <ImageView
+            android:src="@drawable/ic_view_headline_white_48dp"
+            android:id="@+id/imageHome2"
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:paddingTop="5dip"
+            android:layout_marginTop="5dip" />
+        <TextView
+            android:text="PhobiaVRClear"
+            android:id="@+id/textPhobiaVRClearHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:height="70dip"
+            android:width="500dip"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="40dip" />
+    </LinearLayout>
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewResult">
+        <LinearLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearMain">
+            <LinearLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linearhomepagedetails">
+                <Space
+                    android:id="@+id/space10"
+                    android:minWidth="600dip"
+                    android:minHeight="20dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Home Page Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textHomePageDetails"
+                    android:gravity="center"
+                    android:textSize="30dip"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:text="Left is the list of Phobias and their description, VR application can installed and opened with the download button,  the thumb up allows to take the Anxiety Test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/texthomepagedescription1"
+                    android:gravity="center"
+                    android:textSize="12dip"
+                    android:layout_gravity="left"
+                    android:padding="5dip" />
+                <Space
+                    android:id="@+id/space3"
+                    android:minWidth="600dip"
+                    android:minHeight="20dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearhomepagedetailsicons">
+                    <TextView
+                        android:text="No VR application is donwloadable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/texthomepagedescription1"
+                        android:gravity="center"
+                        android:textSize="10dip"
+                        android:layout_gravity="left"
+                        android:paddingLeft="5dip" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView1"
+                        android:src="@drawable/ic_info_outline_white_36dp"
+                        android:paddingLeft="45dip" />
+                </LinearLayout>
+                <LinearLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearhomepagedetailsicons1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="VR application is installable &amp; can be Opened"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/texthomepagedescription1"
+                        android:gravity="center"
+                        android:textSize="10dip"
+                        android:layout_gravity="left"
+                        android:paddingLeft="5dip" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView1"
+                        android:src="@drawable/ic_get_app_white_36dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearhomepagedetailsicons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Take the K10 Anxiety Test for this Phobia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/texthomepagedescription1"
+                        android:gravity="center"
+                        android:textSize="10dip"
+                        android:layout_gravity="left"
+                        android:paddingLeft="5dip" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView1"
+                        android:src="@drawable/ic_thumb_up_white_36dp"
+                        android:paddingLeft="15dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linearTestpagedetails">
+                <Space
+                    android:id="@+id/space10"
+                    android:minWidth="600dip"
+                    android:minHeight="20dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Test Page Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textTestPageDetails"
+                    android:gravity="center"
+                    android:textSize="30dip"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:text="This is modified version of the K10 Anxiety test, it is made up of 10 Questions, each question has a ratingbar from 0 to 4 Stars were  0 ok to 4 worst case."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/texthomepagedescription1"
+                    android:gravity="center"
+                    android:textSize="12dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip" />
+                <Space
+                    android:id="@+id/space3"
+                    android:minWidth="600dip"
+                    android:minHeight="20dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearhomepagedetailsicons">
+                    <TextView
+                        android:text="4 Stars to rate how you feel 0 ok - 4 Worst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/texttestpagedescription1"
+                        android:gravity="center"
+                        android:textSize="10dip"
+                        android:layout_gravity="left"
+                        android:paddingLeft="5dip" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView1"
+                        android:src="@android:drawable/star_off"
+                        android:paddingLeft="12dip" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imagestar2"
+                        android:src="@android:drawable/star_off" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imagestar2"
+                        android:src="@android:drawable/star_off" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imagestar2"
+                        android:src="@android:drawable/star_off" />
+                </LinearLayout>
+                <LinearLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearhomepagedetailsicons1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Result Button to obtain the results of the test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/texthomepagedescription1"
+                        android:gravity="center"
+                        android:textSize="10dip"
+                        android:layout_gravity="left"
+                        android:paddingLeft="5dip"
+                        android:paddingTop="10dip"
+                        android:paddingRight="10dip" />
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="80.5dp"
+                        android:layout_height="36.0dp"
+                        android:text="Result"
+                        android:layout_marginRight="0.0dp"
+                        android:layout_marginLeft="0.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linearTestpagedetails">
+                <Space
+                    android:id="@+id/space10"
+                    android:minWidth="600dip"
+                    android:minHeight="20dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Result Page Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textResultPageDetails"
+                    android:gravity="center"
+                    android:textSize="30dip"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:text="From the K10 Anxiety question we can identify whether you should continue with the VR application testing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/texthomepagedescription1"
+                    android:gravity="center"
+                    android:textSize="12dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip" />
+                <Space
+                    android:id="@+id/space3"
+                    android:minWidth="600dip"
+                    android:minHeight="20dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearhomepagedetailsicons1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:text="Date/Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:textSize="16dip"
+                android:layout_gravity="center" />
+            <Space
+                android:id="@+id/space5"
+                android:minWidth="600dip"
+                android:minHeight="40dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Space
+                android:id="@+id/line"
+                android:minWidth="600dip"
+                android:minHeight="5dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+            <TextView
+                android:text="Test Result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_gravity="center"
+                android:textSize="18dip" />
+            <TextView
+                android:text="Result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_gravity="center"
+                android:textSize="14dip" />
+            <Space
+                android:id="@+id/space4"
+                android:minWidth="600dip"
+                android:minHeight="40dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Recommendation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textRecommend"
+                android:layout_gravity="center"
+                android:textSize="14dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -80,7 +80,7 @@ namespace PhobiaVRLib
                 rndgreen = 140,
                 rndblue = 126,
                 Name = "Acrophobia",
-                VRAppIcon = 2130837663, //this is the icon from drawable ic_get_app_white_36dp
+                VRAppIcon = 2130837709, //this is the icone from drawable ic_info_outline_white_36pd
                 Description = "Fear of heights",
                 VRAppName = "There is no Vitual Reality Application at this Moment"
 

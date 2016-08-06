@@ -15,7 +15,7 @@ using Android.Widget;
 
 namespace PhobiaVRClear
 {
-    [Activity(Label = "Based on K10 Anxiety Test")]
+    [Activity(Label = "Based on K10 Anxiety Test", Theme = "@style/PhobiaVRClearTheme")]
     public class Test : Activity
     {
         
@@ -59,13 +59,11 @@ namespace PhobiaVRClear
 
             //home button
             var homebutton = FindViewById<ImageView>(Resource.Id.imageHometest);
-            homebutton.SetBackgroundColor(Android.Graphics.Color.Rgb(red - 30, green - 30, blue - 30));
             homebutton.Click += Homebutton_Click;
 
             //set the Questiontable to the Home button color
             var testlinearlayout = FindViewById<LinearLayout>(Resource.Id.testlinearlayout);
-            testlinearlayout.SetBackgroundColor(Android.Graphics.Color.Rgb(red - 30, green - 30, blue - 30));
-
+    
 
             //Sets the Phobiatype from intent sets to QuestionTable TestMain.axml
             var Qtable = FindViewById<TableLayout>(Resource.Id.QuestionTable);
@@ -74,14 +72,12 @@ namespace PhobiaVRClear
 
             Qtable.AddView(QuestionRow);
             Qtable.SetColumnStretchable(0, true);
-            Qtable.SetBackgroundColor(Android.Graphics.Color.Rgb(red-30, green-30, blue-30));
   
 
             var textView = new TextView(this);
             textView.Text = Intent.GetStringExtra("PhobiaType");
             textView.SetTextSize(Android.Util.ComplexUnitType.Dip, 36);
             textView.Gravity = GravityFlags.Center;
-            textView.SetBackgroundColor(Android.Graphics.Color.Rgb(red-30,green-30,blue-30));
             QuestionRow.AddView(textView);
 
 
@@ -131,14 +127,14 @@ namespace PhobiaVRClear
                             Answerarray[i] = myRatingBar.Rating;
                         }
                     }
-
-                    Toast.MakeText(this,"0:" + Answerarray[0] + "  1:" + Answerarray[1] + "  2:" + Answerarray[2] + "  3:" + Answerarray[3] + "  4:" + Answerarray[4] + "  5:" + Answerarray[5] + "   6:" + Answerarray[6] + "  7:" + Answerarray[7] + "  8:" + Answerarray[8], ToastLength.Short).Show();
+                    // test line Toast.MakeText(this,"0:" + Answerarray[0] + "  1:" + Answerarray[1] + "  2:" + Answerarray[2] + "  3:" + Answerarray[3] + "  4:" + Answerarray[4] + "  5:" + Answerarray[5] + "   6:" + Answerarray[6] + "  7:" + Answerarray[7] + "  8:" + Answerarray[8], ToastLength.Short).Show();
                  };
+
                 //myRatingBar.SetBackgroundResource(Resource.Drawable.CustomRatingBar);
                 myRatingBar.SetBackgroundColor(Android.Graphics.Color.Rgb(red, green, blue));
                 QuestionRow3.AddView(myRatingBar,wrap);
 
-                //Col Test
+                //RatingBar values
                 var QuestionRow5 = new TableRow(this);
 
                 Qtable2.AddView(QuestionRow5);
@@ -188,7 +184,7 @@ namespace PhobiaVRClear
                 }               
                 if (Score >= 16 && Score <= 20)
                 {
-                    ResultOutput = "You could try next difficutly if you feel OK";
+                    ResultOutput = "You could try next difficulty if you feel OK";
                 } 
                 if (Score >= 21 && Score <= 25)
                 {
@@ -196,10 +192,10 @@ namespace PhobiaVRClear
                 }
                 if (Score >= 26)
                 {
-                    ResultOutput = "Wait until you feel better before trying this difficutly again";
+                    ResultOutput = "Wait until you feel better before trying this difficulty again";
                 }
   
-                var timenow = DateTime.Now.ToString();
+                var timenow = DateTime.Now.ToString("dd MMMM, yyyy hh:mm");
 
 
                 //Stores the anwser into Local file Mytests
@@ -220,7 +216,7 @@ namespace PhobiaVRClear
                 mytest.PutString("Result", ResultOutput);
                 mytest.Commit();
 
-                Toast.MakeText(this, textView.Text + " Phobia - Test saved at:" + timenow + "   " + Score + "  " + ResultOutput, ToastLength.Short).Show();
+                // test data Toast.MakeText(this, textView.Text + " Phobia - Test saved at:" + timenow + "   " + Score + "  " + ResultOutput, ToastLength.Short).Show();
 
                 Score = 0;
                 ResultOutput = "";
@@ -252,6 +248,7 @@ namespace PhobiaVRClear
 
         private void Homebutton_Click(object sender, EventArgs e)
         {
+           
             Intent home = new Intent(this, typeof(MainActivity));
             this.StartActivity(home);
         }

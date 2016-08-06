@@ -5,6 +5,55 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeLayout"
+        android:weightSum="100">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_view_headline_white_48dp"
+            android:id="@+id/imageHome1"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dip" />
+        <TextView
+            android:text="Phobia"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textType"
+            android:width="80dip"
+            android:gravity="center"
+            android:layout_weight="14" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/space3"
+            android:minWidth="20dip"
+            android:layout_weight="35" />
+        <TextView
+            android:text="VR Application"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textVRApp"
+            android:width="120dip"
+            android:gravity="center"
+            android:layout_weight="30" />
+        <TextView
+            android:text="Test"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:width="80dip"
+            android:gravity="center"
+            android:layout_weight="20" />
+    </LinearLayout>
     <ScrollView
         android:minWidth="25px"
         android:minHeight="25px"
@@ -18,7 +67,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="5dip"
-            android:id="@+id/PhobiaTableLayout">
-        </TableLayout>
+            android:id="@+id/PhobiaTableLayout" />
     </ScrollView>
 </LinearLayout>

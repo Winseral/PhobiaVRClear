@@ -14,20 +14,25 @@ using Android.Content;
 
 namespace PhobiaVRClear
 {
-    [Activity(Label = "PhobiaVRClear", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "PhobiaVRClear", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/PhobiaVRClearTheme")]
     public class MainActivity : Activity
     {
-        
-    
+        ImageView button_home;
+      
+
         protected override void OnCreate(Bundle bundle)
         {
-            
+ 
             base.OnCreate(bundle);
 
             Vibrator myvibrator = (Vibrator)this.ApplicationContext.GetSystemService(Context.VibratorService);
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+
+            button_home = FindViewById<ImageView>(Resource.Id.imageHome1);
+            button_home.Click += Homemenu_Click;
+
 
             //set the Phobia list for Library on to the table layout call PhobiaTableLayout
             var phobias = PhobiaVRLib.PhobiaVRSource.GetPhobiaList(11);
@@ -36,8 +41,6 @@ namespace PhobiaVRClear
             table.SetColumnStretchable(1, true);
             table.SetColumnStretchable(2, true);
 
-            
-      
             foreach (var Phobialisted in phobias)
             {
               
@@ -131,7 +134,42 @@ namespace PhobiaVRClear
 
           
         }
+        //This is popmenu click event
+        private void Homemenu_Click(object sender, EventArgs e)
+        {
+            PopupMenu menu = new PopupMenu(this, button_home);
+            menu.MenuInflater.Inflate(Resource.Menu.popup_menu, menu.Menu);
 
+            menu.MenuItemClick += (s, arg) =>
+            {
+                Console.WriteLine("{0} selected", arg.Item.TitleFormatted);
+
+                if (arg.Item.TitleFormatted.ToString() == "Home")
+                {
+                    //not required but need the spacing
+                };
+
+                if (arg.Item.TitleFormatted.ToString() == "Previous Test")
+                {
+                    Intent Result = new Intent(this, typeof(Result));
+                    this.StartActivity(Result);
+                };
+
+                if (arg.Item.TitleFormatted.ToString() == "About")
+                {
+                    Intent Home = new Intent(this, typeof(About));
+                    this.StartActivity(Home);
+                };
+
+            };
+
+            menu.DismissEvent += (s, arg) =>
+            {
+                Console.WriteLine("menu dismissed");
+            };
+            menu.Show();
+        }
+       
     }
 
 }

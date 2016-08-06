@@ -28,6 +28,7 @@ namespace PhobiaVRClear
 		{
 			global::PhobiaVRLib.Resource.String.ApplicationName = global::PhobiaVRClear.Resource.String.ApplicationName;
 			global::PhobiaVRLib.Resource.String.Hello = global::PhobiaVRClear.Resource.String.Hello;
+			global::PhobiaVRLib.Resource.Style.PhobiaVRClearTheme = global::PhobiaVRClear.Resource.Style.PhobiaVRClearTheme;
 		}
 		
 		public partial class Attribute
@@ -1265,74 +1266,152 @@ namespace PhobiaVRClear
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050016
-			public const int AnswerTable = 2131034134;
+			// aapt resource value: 0x7f07002d
+			public const int AnswerTable = 2131165229;
 			
-			// aapt resource value: 0x7f050001
-			public const int PhobiaTableLayout = 2131034113;
+			// aapt resource value: 0x7f070020
+			public const int PhobiaTableLayout = 2131165216;
 			
-			// aapt resource value: 0x7f050014
-			public const int QuestionTable = 2131034132;
+			// aapt resource value: 0x7f07002b
+			public const int QuestionTable = 2131165227;
 			
-			// aapt resource value: 0x7f050002
-			public const int ResultLayout = 2131034114;
+			// aapt resource value: 0x7f070000
+			public const int ResultLayout = 2131165184;
 			
-			// aapt resource value: 0x7f050003
-			public const int imageHome = 2131034115;
+			// aapt resource value: 0x7f070012
+			public const int button1 = 2131165202;
 			
-			// aapt resource value: 0x7f050013
-			public const int imageHometest = 2131034131;
+			// aapt resource value: 0x7f07001b
+			public const int homeLayout = 2131165211;
 			
-			// aapt resource value: 0x7f050005
-			public const int linearLayoutResult = 2131034117;
+			// aapt resource value: 0x7f070021
+			public const int imageHome = 2131165217;
 			
-			// aapt resource value: 0x7f05000f
-			public const int myListView = 2131034127;
+			// aapt resource value: 0x7f07001c
+			public const int imageHome1 = 2131165212;
 			
-			// aapt resource value: 0x7f050000
-			public const int scrollView1 = 2131034112;
+			// aapt resource value: 0x7f070002
+			public const int imageHome2 = 2131165186;
 			
-			// aapt resource value: 0x7f050015
-			public const int scrollView2 = 2131034133;
+			// aapt resource value: 0x7f07002a
+			public const int imageHometest = 2131165226;
 			
-			// aapt resource value: 0x7f050004
-			public const int scrollViewResult = 2131034116;
+			// aapt resource value: 0x7f07000c
+			public const int imageView1 = 2131165196;
 			
-			// aapt resource value: 0x7f050008
-			public const int space3 = 2131034120;
+			// aapt resource value: 0x7f070011
+			public const int imagestar2 = 2131165201;
 			
-			// aapt resource value: 0x7f050007
-			public const int space4 = 2131034119;
+			// aapt resource value: 0x7f07002e
+			public const int item1 = 2131165230;
 			
-			// aapt resource value: 0x7f05000c
-			public const int space5 = 2131034124;
+			// aapt resource value: 0x7f07002f
+			public const int item2 = 2131165231;
 			
-			// aapt resource value: 0x7f050012
-			public const int testlinearlayout = 2131034130;
+			// aapt resource value: 0x7f070030
+			public const int item3 = 2131165232;
 			
-			// aapt resource value: 0x7f050010
-			public const int textDateTime = 2131034128;
+			// aapt resource value: 0x7f070016
+			public const int line = 2131165206;
 			
-			// aapt resource value: 0x7f050006
-			public const int textPhobiaType = 2131034118;
+			// aapt resource value: 0x7f070023
+			public const int linearLayoutResult = 2131165219;
 			
-			// aapt resource value: 0x7f05000d
-			public const int textRecommend = 2131034125;
+			// aapt resource value: 0x7f070005
+			public const int linearMain = 2131165189;
 			
-			// aapt resource value: 0x7f050011
-			public const int textResult = 2131034129;
+			// aapt resource value: 0x7f070001
+			public const int linearResultHome = 2131165185;
 			
-			// aapt resource value: 0x7f05000e
-			public const int textResultOutput = 2131034126;
+			// aapt resource value: 0x7f07000e
+			public const int linearTestpagedetails = 2131165198;
 			
-			// aapt resource value: 0x7f05000b
-			public const int textScore = 2131034123;
+			// aapt resource value: 0x7f070006
+			public const int linearhomepagedetails = 2131165190;
 			
-			// aapt resource value: 0x7f050009
-			public const int textView1 = 2131034121;
+			// aapt resource value: 0x7f07000b
+			public const int linearhomepagedetailsicons = 2131165195;
 			
-			// aapt resource value: 0x7f05000a
-			public const int textView2 = 2131034122;
+			// aapt resource value: 0x7f07000d
+			public const int linearhomepagedetailsicons1 = 2131165197;
+			
+			// aapt resource value: 0x7f070027
+			public const int myListView = 2131165223;
+			
+			// aapt resource value: 0x7f07001f
+			public const int scrollView1 = 2131165215;
+			
+			// aapt resource value: 0x7f07002c
+			public const int scrollView2 = 2131165228;
+			
+			// aapt resource value: 0x7f070004
+			public const int scrollViewResult = 2131165188;
+			
+			// aapt resource value: 0x7f070007
+			public const int space10 = 2131165191;
+			
+			// aapt resource value: 0x7f07000a
+			public const int space3 = 2131165194;
+			
+			// aapt resource value: 0x7f070019
+			public const int space4 = 2131165209;
+			
+			// aapt resource value: 0x7f070015
+			public const int space5 = 2131165205;
+			
+			// aapt resource value: 0x7f070029
+			public const int testlinearlayout = 2131165225;
+			
+			// aapt resource value: 0x7f070024
+			public const int textDateTime = 2131165220;
+			
+			// aapt resource value: 0x7f070008
+			public const int textHomePageDetails = 2131165192;
+			
+			// aapt resource value: 0x7f070022
+			public const int textPhobiaType = 2131165218;
+			
+			// aapt resource value: 0x7f070003
+			public const int textPhobiaVRClearHeading = 2131165187;
+			
+			// aapt resource value: 0x7f07001a
+			public const int textRecommend = 2131165210;
+			
+			// aapt resource value: 0x7f070028
+			public const int textResult = 2131165224;
+			
+			// aapt resource value: 0x7f070026
+			public const int textResultOutput = 2131165222;
+			
+			// aapt resource value: 0x7f070013
+			public const int textResultPageDetails = 2131165203;
+			
+			// aapt resource value: 0x7f070025
+			public const int textScore = 2131165221;
+			
+			// aapt resource value: 0x7f07000f
+			public const int textTestPageDetails = 2131165199;
+			
+			// aapt resource value: 0x7f07001d
+			public const int textType = 2131165213;
+			
+			// aapt resource value: 0x7f07001e
+			public const int textVRApp = 2131165214;
+			
+			// aapt resource value: 0x7f070017
+			public const int textView1 = 2131165207;
+			
+			// aapt resource value: 0x7f070018
+			public const int textView2 = 2131165208;
+			
+			// aapt resource value: 0x7f070014
+			public const int textView3 = 2131165204;
+			
+			// aapt resource value: 0x7f070009
+			public const int texthomepagedescription1 = 2131165193;
+			
+			// aapt resource value: 0x7f070010
+			public const int texttestpagedescription1 = 2131165200;
 			
 			static Id()
 			{
@@ -1348,19 +1427,22 @@ namespace PhobiaVRClear
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int About = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Result = 2130903041;
+			public const int Main = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int ResultList = 2130903042;
+			public const int Result = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int ResultListAdapter = 2130903043;
+			public const int ResultList = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int TestMain = 2130903044;
+			public const int ResultListAdapter = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int TestMain = 2130903045;
 			
 			static Layout()
 			{
@@ -1368,6 +1450,22 @@ namespace PhobiaVRClear
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int popup_menu = 2131099648;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}
@@ -1387,6 +1485,22 @@ namespace PhobiaVRClear
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int PhobiaVRClearTheme = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}
