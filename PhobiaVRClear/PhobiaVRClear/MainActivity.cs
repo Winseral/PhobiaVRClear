@@ -35,7 +35,7 @@ namespace PhobiaVRClear
 
 
             //set the Phobia list for Library on to the table layout call PhobiaTableLayout
-            var phobias = PhobiaVRLib.PhobiaVRSource.GetPhobiaList(11);
+            var phobias = PhobiaVRLib.PhobiaVRSource.GetPhobiaList(62);
             var table = FindViewById<TableLayout>(Resource.Id.PhobiaTableLayout);
             table.SetColumnStretchable(0, true);
             table.SetColumnStretchable(1, true);
