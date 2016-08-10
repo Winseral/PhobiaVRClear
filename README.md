@@ -112,7 +112,11 @@
   </style>
 </resources>
 ```
+---------------
+#[Offical Google IconsMaterial](http://www.google.com/design/spec/style/icons.html#icons-system-icons)
 
-
+###The material design icons were used in this project, the guidlines specs can be found at http://www.google.com/design/spec
+Please see the [Creative Commons Attribution 4.0 Internationl License](http://creativecommons.org/licenses/by/4.0/) for use
+--------------
 
 
