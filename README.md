@@ -16,7 +16,6 @@
 ### [K10 Anxiety Test from Beyond Blue](https://www.beyondblue.org.au/the-facts/anxiety-and-depression-checklist-k10])
 ![question page](https://cloud.githubusercontent.com/assets/12288812/17422704/b7273714-5af7-11e6-8d90-a0ae8fdd707d.PNG)
 
------------------
 ### About page
 ![about page](https://cloud.githubusercontent.com/assets/12288812/17422723/ce03b3fe-5af7-11e6-81c4-33e2ead83026.PNG)
 ----------------
