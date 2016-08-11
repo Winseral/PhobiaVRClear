@@ -23,7 +23,7 @@
 ![about page](https://cloud.githubusercontent.com/assets/12288812/17422723/ce03b3fe-5af7-11e6-81c4-33e2ead83026.PNG)
 ----------------
 
-##Data structure - all data found in PhobiaVRClearLib
+##Data structure - PhobiaVRClearLib
 ![datastructure](https://cloud.githubusercontent.com/assets/12288812/17501665/3afc1aee-5e24-11e6-9109-bfa126959b70.PNG)
 
 #Code
