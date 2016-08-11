@@ -7,7 +7,10 @@
 
 ##Phobia testing application designed to help find Phobia Virtual Reality Applications, test and overcome your fears.
 -----------------
+
 ### Android Supported API 19 KitCat to Android N API 24
+### Download the code from [here](https://github.com/Winseral/PhobiaVRClear)
+
 -----------------
 
 ### Phobia List and their descriptions
