@@ -32,7 +32,7 @@
 ##Using##
 ```
 MainActivity.cs - extras
-
+------------------------
 using static Android.Views.View;
 using System;
 using Android.Graphics;
@@ -42,7 +42,7 @@ using Uri = Android.Net.Uri;
 using Android.Content;
 
 Result.cs - extras
-
+-----------------------
 using Android.App;
 using Android.OS;
 using Android.Runtime;
@@ -50,7 +50,7 @@ using Android.Views;
 using Android.Widget;
 
 About.cs - extras
-
+-----------------------
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -60,7 +60,7 @@ using PhobiaVRLib;
 using Android.Widget;
 
 test.cs - extras
-
+-----------------------
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -70,7 +70,7 @@ using PhobiaVRLib;
 using Android.Widget;
 
 PhobiaVRList.cs
-
+----------------------
 using Android.Content.PM;
 using System;
 using System.Collections.Generic;
@@ -79,7 +79,7 @@ using System.Text;
 using static Android.Resource;
 
 TestList.cs
-
+-----------------------
 using Android.Content.PM;
 using System;
 using System.Collections.Generic;
