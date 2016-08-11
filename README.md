@@ -9,7 +9,7 @@
 -----------------
 
 ### Android Supported API 19 KitCat to Android N API 24
-### Download the code from [here](https://github.com/Winseral/PhobiaVRClear)
+### [Download the code from GitHub](https://github.com/Winseral/PhobiaVRClear)
 
 -----------------
 
